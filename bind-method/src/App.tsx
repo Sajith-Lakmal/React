@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 
 interface AppState {
   name: string;
@@ -27,8 +27,8 @@ class App extends React.Component<AppProps, AppState> {
   render() {
     return (
       <>
-        <div>
-          <h1>Name:{this.state.name}</h1>
+        <div className="App">
+          <h1 className="App-logo">Name:{this.state.name}</h1>
           <h1>Click here to change the name </h1>
           <button
             onClick={() => {
